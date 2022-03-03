@@ -49,14 +49,14 @@ target_link_libraries( # Specifies the target library.
 #Линкуем наши библиотеки с основой
 add_library(spdlog STATIC IMPORTED)
 set_target_properties(spdlog PROPERTIES IMPORTED_LOCATION
-        /home/rustam/AndroidStudioProjects/libs/spdlog/build/${ANDROID_ABI}/libspdlog.a)
+        /home/rikri/AndroidStudioProjects/libs/spdlog/build/${ANDROID_ABI}/libspdlog.a)
 
 add_library(mbedcrypto SHARED IMPORTED)
 set_target_properties(mbedcrypto PROPERTIES IMPORTED_LOCATION
-        /home/rustam/AndroidStudioProjects/fclient/app/src/main/nativeLibs/${ANDROID_ABI}/libmbedcrypto.so)
+        /home/rikri/AndroidStudioProjects/fclient/app/src/main/nativeLibs/${ANDROID_ABI}/libmbedcrypto.so)
 target_include_directories(fclient PUBLIC
-        /home/rustam/AndroidStudioProjects/libs/spdlog/spdlog/include
-        /home/rustam/AndroidStudioProjects/libs/mbedtls/mbedtls/include
+        /home/rikri/AndroidStudioProjects/libs/spdlog/spdlog/include
+        /home/rikri/AndroidStudioProjects/libs/mbedtls/mbedtls/include
         )
 
 target_link_libraries(
